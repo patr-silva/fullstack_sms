@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+
+*:not(svg) {
+  background-color: #f6f4ed;
+  font-family: "Sour Gummy", sans-serif;
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 4rem !important;
+  color: #ff5758 !important;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2.5rem !important;
+  }
+}
+
+table tbody tr {
+  border-bottom: 1px solid #e7decc;
+}
+
+table tbody tr:last-child {
+  border-bottom: none;
+}
+
+table thead {
+  background-color: transparent !important;
+}
+
+table th {
+  background-color: transparent !important;
+  color: inherit;
+}
+
+table tbody td {
+  background-color: transparent !important;
+}
+
+.time {
+  font-size: larger;
+  color: #ff5758;
+}
+
+.home-title {
+  font-optical-sizing: auto;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: #1e648e !important;
+}
+
+.create-btn {
+  background-color: #bfa5a3;
+  border: none;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 4px;
+}
+
+.eye-icon {
+  color: #1e648e;
+}
+.pencil-icon {
+  color: #bfa5a3;
+}
+
+.trash-icon {
+  color: #ff5758;
+}
+
+.form-title {
+  font-size: 3rem !important;
+  color: #1e648e !important;
+}
+

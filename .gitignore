@@ -1,0 +1,65 @@
+# General OS-specific files
+.DS_Store
+Thumbs.db
+
+# Node.js (Frontend - React)
+sms-frontend/node_modules/
+sms-frontend/build/
+sms-frontend/.env
+sms-frontend/.cache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs/
+*.log
+backend/logs/
+
+# IntelliJ IDEA (if used)
+*.iml
+.idea/
+*.ipr
+*.iws
+
+# Maven (Backend - Spring Boot)
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+
+# Java and Spring Boot
+*.class
+*.war
+*.jar
+*.log
+*.db
+*.h2.db
+*.mv.db
+*.swp
+
+# Database
+*.db
+*.sql
+*.sqlite
+
+# Sensitive configuration files
+sms-backend/src/main/resources/application.properties
+sms-backend/src/main/resources/application.yml
+
+# System-generated files
+*.bak
+*.tmp
+*.swp
+*.swo
+*.orig
+
+# IDE/Editor-specific
+.vscode/
+*.code-workspace
+
+# Git
+.git/
