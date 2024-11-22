@@ -5,16 +5,17 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.LocalDateTime;
+
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class StudentDto {
+public class LessonDto {
     private Long id;
-    private String firstName;
-    private String lastName;
-    private Integer age;
-    private Integer grade;
-    private String guardianName;
-    private Long guardianContact;
+    private String title;
+    private String description;
+    private LocalDateTime startTime;
+    private LocalDateTime endTime;
+    private Long studentId;
 }

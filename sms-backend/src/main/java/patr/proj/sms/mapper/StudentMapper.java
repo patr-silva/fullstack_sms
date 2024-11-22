@@ -18,14 +18,14 @@ public class StudentMapper {
     }
 
     public static Student mapToStudent(StudentDto studentDto) {
-        return new Student(
-                studentDto.getId(),
-                studentDto.getFirstName(),
-                studentDto.getLastName(),
-                studentDto.getAge(),
-                studentDto.getGrade(),
-                studentDto.getGuardianName(),
-                studentDto.getGuardianContact()
-        );
+        Student student = new Student();
+        student.setId(studentDto.getId());
+        student.setFirstName(studentDto.getFirstName());
+        student.setLastName(studentDto.getLastName());
+        student.setAge(studentDto.getAge());
+        student.setGrade(studentDto.getGrade());
+        student.setGuardianName(studentDto.getGuardianName());
+        student.setGuardianContact(studentDto.getGuardianContact());
+        return student;
     }
 }

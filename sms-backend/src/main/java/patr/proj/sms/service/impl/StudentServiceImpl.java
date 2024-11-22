@@ -24,14 +24,13 @@ public class StudentServiceImpl implements StudentService {
         Student student = StudentMapper.mapToStudent(studentDto);
         Student savedStudent = studentRepository.save(student);
 
-        return StudentMapper.mapToStudentDto((savedStudent));
+        return StudentMapper.mapToStudentDto(savedStudent);
     }
 
     @Override
     public StudentDto getStudentById(Long studentId) {
-        Student student = studentRepository.findById(studentId).orElseThrow(() ->
-                new ResourceNotFoundException("We could not find a student with the given id"));
-        return StudentMapper.mapToStudentDto((student));
+        Student student = studentRepository.findById(studentId).orElseThrow(() -> new ResourceNotFoundException("We could not find a student with the given id"));
+        return StudentMapper.mapToStudentDto(student);
     }
 
     @Override
@@ -50,6 +49,7 @@ public class StudentServiceImpl implements StudentService {
         student.setGrade(updatedStudent.getGrade());
         student.setGuardianName(updatedStudent.getGuardianName());
         student.setGuardianContact(updatedStudent.getGuardianContact());
+
 
         Student updatedStudentObj = studentRepository.save(student);
 
