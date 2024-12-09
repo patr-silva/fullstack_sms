@@ -77,7 +77,7 @@ const Calendar = () => {
       <div className='row mb-3'>
         <div className='col text-end'>
           <button className='create-btn' onClick={createNewLesson}>
-            Create new Lesson
+            Schedule Lesson
           </button>
         </div>
       </div>
