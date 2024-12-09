@@ -42,7 +42,7 @@ const LessonDetails = () => {
   function removeLesson(id) {
     deleteLesson(id)
       .then((response) => {
-       // console.log(response);
+        // console.log(response);
         navigator("/lessons");
       })
       .catch((error) => {
@@ -143,22 +143,28 @@ const LessonDetails = () => {
           <div className='card profile mb-4'>
             <div className='card-body d-flex flex-column flex-md-row align-items-center text-center justify-content-evenly'>
               <div>
-                <p className='fs-5'>
-                  <span className='fw-bold'>Student </span> <br />
+                <p className='fs-6 text-break'>
+                  <span className='fw-bold fs-5'>Student </span> <br />
                   {student.firstName} {student.lastName}
                 </p>
-                <p className='fs-5'>
-                  <span className='fw-bold'>Grade </span> <br />
+                <p className='fs-6 text-break'>
+                  <span className='fw-bold fs-5'>Grade </span> <br />
                   {student.grade} º
                 </p>
-                <p className='fs-5'>
-                  <span className='fw-bold'>Subject </span> <br />
+                <p className='fs-6 text-break'>
+                  <span className='fw-bold fs-5'>Subject </span> <br />
                   {title}
                 </p>
               </div>
-              <div>
-                <p className='fs-5 text-justify'>
-                  <span className='fw-bold'>Summary </span> <br />
+              <div
+                style={{
+                  maxWidth: "300px",
+                  textAlign: "left",
+                  wordWrap: "break-word",
+                }}
+              >
+                <p className='fs-6 text-break'>
+                  <span className='fw-bold fs-5'>Summary </span> <br />
                   {description}
                 </p>
               </div>

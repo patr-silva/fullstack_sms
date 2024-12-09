@@ -161,21 +161,22 @@ const StudentDetails = () => {
                 </h4>
               </div>
               <div>
-                <p className='fs-5'>
-                  <span className='fw-bold'>Age</span> <br />
+                <p className='fs-6 text-break'>
+                  <span className='fw-bold fs-5'>Age</span> <br />
                   {age} years old
                 </p>
-                <p className='fs-5'>
-                  <span className='fw-bold'>Grade </span> <br /> {grade} º
+                <p className='fs-6 text-break'>
+                  <span className='fw-bold fs-5'>Grade </span> <br /> {grade} º
                 </p>
               </div>
               <div>
-                <p className='fs-5'>
-                  <span className='fw-bold'>Parent/Guardian </span> <br />
+                <p className='fs-6 text-break'>
+                  <span className='fw-bold fs-5'>Parent/Guardian </span> <br />
                   {guardianName}
                 </p>
-                <p className='fs-5'>
-                  <span className='fw-bold'>Contact Information </span> <br />
+                <p className='fs-6 text-break'>
+                  <span className='fw-bold fs-5'>Contact Information </span>{" "}
+                  <br />
                   {guardianContact}
                 </p>
               </div>

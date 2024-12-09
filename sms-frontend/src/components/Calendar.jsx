@@ -78,12 +78,11 @@ const Calendar = () => {
           }}
           eventContent={(eventInfo) => {
             return (
-              <div>
+              <div className='calendar-event'>
                 <span style={{ fontWeight: "bold" }}>
-                  {" "}
                   {eventInfo.timeText} -{" "}
                 </span>
-                {eventInfo.event.title}
+                <span className='event-title'>{eventInfo.event.title}</span>
               </div>
             );
           }}

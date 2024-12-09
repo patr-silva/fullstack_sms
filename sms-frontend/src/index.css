@@ -52,6 +52,13 @@ h2 {
   color: white !important;
 }
 
+.calendar-event {
+  max-width: 100%; 
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+}
+
 @media (max-width: 768px) {
   h2 {
     font-size: 3rem !important;

@@ -155,7 +155,7 @@ const LessonForm = () => {
               <div className='row'>
                 <div className='col-md-6'>
                   <div className='form-group mb-3'>
-                    <label className='form-label fw-bold'>Title</label>
+                    <label className='form-label fw-bold'>Subject</label>
                     <input
                       type='text'
                       name='title'
@@ -171,8 +171,9 @@ const LessonForm = () => {
                   </div>
                   <div className='form-group mb-3'>
                     <label className='form-label fw-bold'>Lesson Summary</label>
-                    <input
-                      type='text'
+                    <textarea
+                      rows='4'
+                      cols='50'
                       name='description'
                       value={description}
                       onChange={(e) => setDescription(e.target.value)}
