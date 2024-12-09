@@ -5,7 +5,6 @@ import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import interactionPlugin from "@fullcalendar/interaction";
-import "../custom-calendar.css";
 import "animate.css";
 
 const Calendar = () => {
@@ -17,11 +16,9 @@ const Calendar = () => {
     getAllLessons();
   }, []);
 
-
-
   function handleEventClick(info) {
     const id = info.event._def.publicId;
-   // console.log("Clicked date:", id);
+    // console.log("Clicked date:", id);
     navigator(`/lessons/${id}`);
   }
 
@@ -66,14 +63,13 @@ const Calendar = () => {
           height='auto'
           weekends={false}
           themeSystem='bootstrap5'
-          initialView='dayGridWeek'
+          initialView={window.innerWidth <= 1024 ? "dayGridDay" : "dayGridWeek"}
           events={lessons}
           headerToolbar={{
             left: "prev,next",
             center: "title",
             right: "dayGridWeek,dayGridDay",
           }}
-
           eventClick={handleEventClick}
           eventTimeFormat={{
             hour: "2-digit",
