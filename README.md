@@ -1,5 +1,5 @@
 <div align="center">
-<h1 align="center">English Classes 📚</h1>
+<h1 align="center">Students Management</h1>
 <p align="center">
 This personal project was undertaken to gain hands-on experience with Spring Boot. The application is designed to help teachers manage their students.
 </p>
@@ -18,15 +18,17 @@ This personal project was undertaken to gain hands-on experience with Spring Boo
 <h1 id="introduction">Introduction</h1>
 <h2 id="about">About the project</h2>
 
-This app is designed to help teachers manage their students efficiently. Currently, teachers can view a list of students, update their details, and remove them if needed.
+This project provides tutors with an intuitive platform to manage their students' information efficiently. Users can access a calendar displaying all scheduled lessons, view detailed information about each lesson, and perform management tasks such as updating or canceling them. The goal is to streamline lesson planning and student data management in one place.
 
 <h2 id="goals">Goals and objectives</h2>
 
-This application is built using a modern tech stack to ensure efficiency and scalability. The frontend is developed with React and styled using Bootstrap for a clean and responsive user interface. The backend is powered by Spring Boot, providing robust and flexible server-side logic. SQL is used for database management, ensuring reliable data storage and retrieval."
+This application leverages a modern tech stack to deliver a scalable and efficient solution for managing student and lesson data. The frontend is built with React, styled with Bootstrap, to provide a clean and responsive user interface. The backend, powered by Spring Boot, ensures robust and flexible server-side logic, while SQL handles database management for reliable data storage and retrieval.
 
-Future enhancements include adding a class schedule, enabling class appointments, and allowing teachers to assign and view student grades.
+Planned enhancements include implementing functionality for assigning and viewing student grades.
+
 
 <h2 id="built">Built with</h2>
+
 
 - ![React](https://img.shields.io/badge/react-%2320232a.svg?style=flat-square&logo=react&logoColor=%2361DAFB)
 - ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=flat-square&logo=react-router&logoColor=white)
