@@ -122,7 +122,7 @@ const LessonForm = () => {
       if (id) {
         updateLesson(id, lesson)
           .then((response) => {
-            console.log(response.data);
+           // console.log(response.data);
             navigator("/lessons");
           })
           .catch((error) => {
@@ -131,7 +131,7 @@ const LessonForm = () => {
       } else {
         createLesson(lesson)
           .then((response) => {
-            console.log(response.data);
+           // console.log(response.data);
             navigator("/lessons");
           })
           .catch((error) => {

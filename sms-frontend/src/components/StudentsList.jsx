@@ -36,7 +36,7 @@ const StudentsList = () => {
   function removeStudent(id) {
     deleteStudent(id)
       .then((response) => {
-        console.log(response.data);
+        //console.log(response.data);
         getAllStudents();
       })
       .catch((error) => {
@@ -61,7 +61,7 @@ const StudentsList = () => {
           <thead>
             <tr>
               <th scope='col' className='text-center'>
-               ID Number 
+                ID Number
               </th>
               <th scope='col' className='text-center'>
                 Name

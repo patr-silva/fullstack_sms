@@ -5,16 +5,10 @@ import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import interactionPlugin from "@fullcalendar/interaction";
-import Tooltip from "./Tooltip";
 import "../custom-calendar.css";
 import "animate.css";
 
 const Calendar = () => {
-  const [tooltip, setTooltip] = useState({
-    visible: false,
-    content: "",
-    position: {},
-  });
   const [lessons, setLessons] = useState([]);
 
   const navigator = useNavigate();
@@ -23,26 +17,11 @@ const Calendar = () => {
     getAllLessons();
   }, []);
 
-  function handleEventMouseEnter(info) {
-    const tooltipContent = `Description: ${info.event.extendedProps.description}`;
-    const tooltipPosition = {
-      top: info.jsEvent.pageY + 10,
-      left: info.jsEvent.pageX + 10,
-    };
-    setTooltip({
-      visible: true,
-      content: tooltipContent,
-      position: tooltipPosition,
-    });
-  }
 
-  function handleEventMouseLeave() {
-    setTooltip({ ...tooltip, visible: false });
-  }
 
   function handleEventClick(info) {
     const id = info.event._def.publicId;
-    console.log("Clicked date:", id);
+   // console.log("Clicked date:", id);
     navigator(`/lessons/${id}`);
   }
 
@@ -60,7 +39,7 @@ const Calendar = () => {
           },
         }));
         setLessons(formattedLessons);
-        console.log(formattedLessons);
+        //console.log(formattedLessons);
       })
       .catch((error) => {
         console.error(error);
@@ -94,8 +73,7 @@ const Calendar = () => {
             center: "title",
             right: "dayGridWeek,dayGridDay",
           }}
-          eventMouseEnter={handleEventMouseEnter}
-          eventMouseLeave={handleEventMouseLeave}
+
           eventClick={handleEventClick}
           eventTimeFormat={{
             hour: "2-digit",
@@ -114,9 +92,6 @@ const Calendar = () => {
             );
           }}
         />
-        {tooltip.visible && (
-          <Tooltip content={tooltip.content} position={tooltip.position} />
-        )}
       </div>
     </div>
   );

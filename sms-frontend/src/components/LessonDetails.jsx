@@ -42,7 +42,7 @@ const LessonDetails = () => {
   function removeLesson(id) {
     deleteLesson(id)
       .then((response) => {
-        console.log(response);
+       // console.log(response);
         navigator("/lessons");
       })
       .catch((error) => {

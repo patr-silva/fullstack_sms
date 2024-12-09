@@ -69,7 +69,7 @@ const StudentForm = () => {
       if (id) {
         updateStudent(id, student)
           .then((response) => {
-            console.log(response.data);
+           // console.log(response.data);
             navigator("/students");
           })
           .catch((error) => {
@@ -78,7 +78,7 @@ const StudentForm = () => {
       } else {
         createStudent(student)
           .then((response) => {
-            console.log(response.data);
+           //console.log(response.data);
             navigator("/students");
           })
           .catch((error) => {

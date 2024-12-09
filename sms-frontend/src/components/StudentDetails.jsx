@@ -42,7 +42,7 @@ const StudentDetails = () => {
 
     getLessonByStudentId(id)
       .then((response) => {
-        console.log(response.data);
+      // console.log(response.data);
         setLessons(response.data);
       })
       .catch((error) => {
@@ -57,7 +57,7 @@ const StudentDetails = () => {
   function removeStudent(id) {
     deleteStudent(id)
       .then((response) => {
-        console.log(response.data);
+       // console.log(response.data);
         navigator("/students");
       })
       .catch((error) => {
