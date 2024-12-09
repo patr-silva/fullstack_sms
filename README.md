@@ -80,8 +80,12 @@ Planned enhancements include implementing functionality for assigning and viewin
    ```
    <p>The frontend should be running at http://localhost:3000 by default.</p>
 
+
+   <img width="1280" alt="Captura de ecrã 2024-12-09, às 18 15 25" src="https://github.com/user-attachments/assets/08c74c1c-2f0b-4f3f-863d-c53370eba667">
+
+
 <h1 id="screenshots">Screenshots</h1>
 <img width="440" alt="Homepage" src="https://github.com/user-attachments/assets/ea4e2c32-dd4f-4029-9f70-85b11b55ae44">
 <img width="440" alt="List" src="https://github.com/user-attachments/assets/b1bac0df-f10c-4bc4-aad0-bb28edecdd23">
-<img width="440" alt="Calendar" src="https://github.com/user-attachments/assets/911888cb-f3a2-4775-9e22-112c283b03≥84">
-<img width="440" alt="Calendar" src="https://github.com/user-attachments/assets/aac9ed75-0606-4265-9836-05b79b1d999a">
+<img width="440" alt="List" src="https://github.com/user-attachments/assets/08c74c1c-2f0b-4f3f-863d-c53370eba667">
+<img width="440" alt="Form" src="https://github.com/user-attachments/assets/aac9ed75-0606-4265-9836-05b79b1d999a">
