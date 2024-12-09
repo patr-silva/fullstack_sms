@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { listStudents, deleteStudent } from "../services/StudentsService";
+import "animate.css";
 
 const StudentsList = () => {
   const [students, setStudents] = useState([]);
@@ -35,6 +36,7 @@ const StudentsList = () => {
   function removeStudent(id) {
     deleteStudent(id)
       .then((response) => {
+        console.log(response.data);
         getAllStudents();
       })
       .catch((error) => {
@@ -43,29 +45,32 @@ const StudentsList = () => {
   }
 
   return (
-    <div className='container'>
-      <h1 className='text-center mb-3 display-4'>Students List</h1>
+    <div className='container animate__animated animate__fadeIn'>
+      <h2 className='text-center mb-3 mt-5 display-4 font-weight-bold'>
+        Students
+      </h2>
       <div className='row mb-3'>
         <div className='col text-end'>
           <button className='create-btn' onClick={createNewStudent}>
-            Create new Student
+            Register Student
           </button>
         </div>
       </div>
       <div className='table-responsive'>
-        <table className='table table-borderless'>
+        <table className='table '>
           <thead>
             <tr>
               <th scope='col' className='text-center'>
-                ID
+               ID Number 
               </th>
               <th scope='col' className='text-center'>
                 Name
               </th>
-
               <th scope='col' className='text-center'>
-                Actions
+                Grade
               </th>
+
+              <th scope='col' className='text-center'></th>
             </tr>
           </thead>
           <tbody>
@@ -78,6 +83,7 @@ const StudentsList = () => {
                   <td className='text-center'>
                     {elem.firstName} {elem.lastName}
                   </td>
+                  <td className='text-center'>{elem.grade} º</td>
                   <td className='text-center'>
                     <button
                       className='btn btn-link btn-sm'

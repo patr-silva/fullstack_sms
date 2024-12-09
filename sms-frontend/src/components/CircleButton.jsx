@@ -4,20 +4,14 @@ import ScheduleIcon from "../icons/ScheduleIcon";
 import GradesIcon from "../icons/GradesIcon";
 import StudentIcon from "../icons/StudentIcon";
 
-const CircleButton = ({ type, onClick, color }) => {
+const CircleButton = ({ type, onClick}) => {
   return (
     <div className='d-flex flex-column align-items-center'>
       <button
-        className='btn btn-primary rounded-circle d-flex align-items-center justify-content-center mb-2'
-        style={{
-          width: "125px",
-          height: "125px",
-          backgroundColor: color,
-          border: "none",
-        }}
+        className='btn btn-primary rounded-circle d-flex align-items-center justify-content-center circle-button'
         type='button'
         onClick={onClick}
-        aria-label={`Click to open ${type}`}
+     
       >
         {type === "Students" ? (
           <StudentIcon />
@@ -27,7 +21,7 @@ const CircleButton = ({ type, onClick, color }) => {
           <GradesIcon />
         )}
       </button>
-      <span className='mt-2'>{type}</span>
+      <p className='mt-2'>{type}</p>
     </div>
   );
 };

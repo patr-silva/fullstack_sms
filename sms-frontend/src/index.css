@@ -1,72 +1,129 @@
-@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
-*:not(svg) {
-  background-color: #f6f4ed;
-  font-family: "Sour Gummy", sans-serif;
-  font-size: 20px;
+html,
+body {
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-h1 {
-  font-size: 4rem !important;
-  color: #ff5758 !important;
+*:not(svg) {
+  font-family: "Open Sans", sans-serif;
+}
+
+h2 {
+  font-size: 3rem !important;
+  color: #fce38a !important;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600 !important;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.fc-toolbar-title {
+  color: #575550 !important;
+  font-size: 1.5rem !important;
+  font-family: "Open Sans", sans-serif !important;
+}
+
+.fc-button {
+  background-color: #fce38a !important;
+  border: none !important;
+  color: white !important;
+  font-weight: 600 !important;
+}
+
+.fc-col-header-cell {
+  background-color: #fce38a !important;
+  color: white !important;
+}
+
+.fc-col-header-cell a {
+  color: white !important;
 }
 
 @media (max-width: 768px) {
-  h1 {
+  h2 {
     font-size: 3rem !important;
   }
 }
 
 @media (max-width: 576px) {
-  h1 {
+  h2 {
     font-size: 2.5rem !important;
   }
 }
 
-table tbody tr {
-  border-bottom: 1px solid #e7decc;
+.title {
+  color: #fce38a !important;
+  font-size: 6rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 1px;
 }
 
-table tbody tr:last-child {
-  border-bottom: none;
+.navbar-brand img {
+  max-height: 80px;
+  object-fit: contain;
 }
 
-table thead {
-  background-color: transparent !important;
+.container-with-navbar {
+  height: calc(100vh - 60vh);
 }
 
-table th {
-  background-color: transparent !important;
-  color: inherit;
+.circle-button {
+  width: 10vw;
+  height: 10vw;
+  max-width: 125px;
+  max-height: 125px;
+  min-width: 50px;
+  min-height: 50px;
+  border: none !important;
+  background-color: #fce38a !important;
 }
 
-table tbody td {
-  background-color: transparent !important;
-}
-
-.time {
-  font-size: larger;
-  color: #ff5758;
-}
-
-.home-title {
-  font-optical-sizing: auto;
-  font-size: 3.5rem;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-  color: #1e648e !important;
+.circle-home-btn {
+  width: 5vw;
+  height: 5vw;
+  max-width: 63px;
+  max-height: 63px;
+  min-width: 45px;
+  min-height: 45px;
+  border: none !important;
+  background-color: #fce38a !important;
 }
 
 .create-btn {
-  background-color: #bfa5a3;
+  background-color: transparent;
   border: none;
-  color: white;
   padding: 0.5rem;
   text-align: center;
-  text-decoration: none;
   display: inline-block;
-  font-size: 20px;
-  border-radius: 4px;
+  font-size: 16px;
+  color: #575550;
+  font-weight: 700;
+}
+
+.create-btn:hover {
+  text-decoration-line: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #fce38a;
+}
+
+.menu-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0.5rem;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  color: #575550;
+  font-weight: 700;
+}
+
+.menu-btn:hover {
+  background-color: #fce38a;
+  color: white;
 }
 
 .eye-icon {
@@ -80,8 +137,31 @@ table tbody td {
   color: #ff5758;
 }
 
-.form-title {
-  font-size: 3rem !important;
-  color: #1e648e !important;
+.form-control {
+  border: none !important;
+  border-bottom: 1px solid !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
 }
 
+.form-control:focus {
+  border-color: #fce38a !important;
+  box-shadow: none !important;
+}
+
+.profile {
+  border: 3px solid #fce38a !important;
+  border-radius: 10px !important;
+}
+
+.profile-table {
+  border: 3px solid #fce38a !important;
+  border-radius: 10px !important;
+}
+
+.card-header {
+  background-color: #fce38a !important;
+  border: none !important;
+  color: white !important;
+  font-weight: 600 !important;
+}
